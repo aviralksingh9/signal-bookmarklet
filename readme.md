@@ -1,70 +1,182 @@
-<p align="center">
-  <img src="assets/copyTokenDemo.gif" alt="Copy Token Demo" width="100%" />
-</p>
+![Copy Token Demo](assets/copyTokenDemo.gif)
 
-<h1 align="center">Copy Token</h1>
+# Copy Token
 
-<p align="center">
-  <strong>Eliminate DevTools friction.</strong><br/>
-  One click. Instant token.
-</p>
+**Eliminate DevTools friction.**  
+One click. Instant token.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Type-Bookmarklet-7C3AED?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Zero-Dependencies-0EA5E9?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/License-MIT-10B981?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Version-1.0.0-black?style=for-the-badge"/>
-</p>
+![Type](https://img.shields.io/badge/Type-Bookmarklet-7C3AED?style=flat-square)
+![Zero Dependencies](https://img.shields.io/badge/Zero-Dependencies-0EA5E9?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-10B981?style=flat-square)
+![Version](https://img.shields.io/badge/Version-1.0.0-black?style=flat-square)
 
 ---
 
-## ✨ What Is This?
+## Overview
 
-**Copy Token** is a premium bookmarklet utility that lets you extract JWT tokens from any logged-in web application — instantly.
+Copy Token is a premium bookmarklet utility that instantly extracts JWT tokens from any logged-in web application — without opening DevTools.
 
-No DevTools.  
 No Network tab hunting.  
 No Storage inspection.  
+No manual copying of Authorization headers.  
 
 Just one click.
 
 ---
 
-## 🚀 Why It Exists
+## Why This Exists
 
-Developers constantly:
+Developers frequently:
 
-- Open DevTools  
-- Go to Network  
-- Find a request  
-- Copy the Authorization header  
-- Paste into Swagger / Postman  
+- Open DevTools
+- Inspect network requests
+- Locate Authorization headers
+- Copy Bearer tokens
+- Paste into Swagger or Postman
 
-This happens dozens of times a day.
+This workflow is repetitive and inefficient.
 
-Copy Token eliminates that friction.
-
----
-
-## 🔥 Features
-
-- 🔐 Detects JWT tokens from `localStorage` and `sessionStorage`
-- ⚡ One-click silent clipboard copy
-- 🧘 Immersive Zen mode
-- 🎯 Deep Focus mode
-- 🌌 Animated sunrise → sunset → night sky
-- ❄ Snow intensity control (Zen only)
-- 🌠 Shooting stars + aurora shimmer
-- 🎧 Optional ambient soundscape
-- 💎 Premium glass UI
+Copy Token eliminates that friction entirely.
 
 ---
 
-## 📦 Installation
+## Features
 
-### 1️⃣ Open the Installer Page
+- Detects JWT tokens in localStorage and sessionStorage
+- Silent clipboard copy (no intrusive alerts)
+- Zen Mode with immersive breathing animation
+- Focus Mode for minimal distraction
+- Animated sunrise → sunset → night sky cycle
+- Aurora shimmer and shooting stars
+- Snow intensity control (Zen mode only)
+- Optional ambient soundscape (Zen and Focus only)
+- Premium glass aesthetic UI
+- Zero dependencies (Vanilla JavaScript)
 
-Open the `index.html` file in your browser.
+---
 
-### 2️⃣ Show Your Bookmarks Bar
+## Installation
 
+1. Open `index.html` in your browser.
+2. Show your bookmarks bar using:
+
+   Ctrl + Shift + B
+
+3. Drag the **Copy Token** button to your bookmarks bar.
+
+Installation complete.
+
+---
+
+## Usage
+
+1. Log into any web environment.
+2. Click your **Copy Token** bookmark.
+3. The JWT token is copied silently to your clipboard.
+
+Paste it wherever needed.
+
+---
+
+## Immersive Modes
+
+### Zen Mode
+
+- Breathing animation
+- Snowfall with adjustable intensity
+- Calm ambient soundtrack
+- Night aurora visuals
+
+### Focus Mode
+
+- Minimal visual environment
+- Deep ambient soundscape
+- Clean distraction-free interface
+
+Sound controls appear only inside immersive modes.  
+The landing page remains utility-focused.
+
+---
+
+## Security and Privacy
+
+This tool:
+
+- Does not send data anywhere
+- Does not store tokens
+- Does not log user activity
+- Executes entirely in your browser
+- Copies tokens locally using the Clipboard API
+
+Always ensure you trust the environment where you use this bookmarklet.
+
+---
+
+## How It Works
+
+The bookmarklet scans:
+
+- localStorage
+- sessionStorage
+
+It identifies strings matching JWT structure:
+
+header.payload.signature
+
+The first valid match is copied directly to the clipboard.
+
+No network calls.  
+No external APIs.  
+No tracking.
+
+---
+
+## Project Structure
+.
+├── index.html
+├── styles.css
+├── script.js
+└── assets
+    ├── copyTokenDemo.gif
+    ├── day.mp3
+    ├── zen.mp3
+
+---
+
+## Browser Support
+
+- Chrome
+- Edge
+- Brave
+- Firefox
+
+Note: Audio autoplay follows browser security policies and requires user interaction.
+
+---
+
+## Built With
+
+- Vanilla JavaScript
+- Canvas API
+- Modern CSS
+- Bookmarklet architecture
+
+No frameworks.  
+No build tools.  
+No dependencies.
+
+---
+
+## License
+
+MIT License
+
+---
+
+## Philosophy
+
+Developer tools should reduce friction.
+
+Copy Token combines precision utility, elegant design, minimalism, and immersive craftsmanship — because even small workflows deserve thoughtful execution.
+
+Built for developers who value clarity and calm.
