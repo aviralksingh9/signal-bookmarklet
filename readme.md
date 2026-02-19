@@ -163,6 +163,24 @@ No build step.
 
 ---
 
+## 🎵 Audio Credits
+
+Zen Mode and Focus Mode include music by **Scott Buckley**, used under the Creative Commons Attribution 4.0 License (CC BY 4.0).
+
+- **Zen Mode:**  
+  *Meanwhile* — Scott Buckley  
+  https://www.scottbuckley.com.au/library/meanwhile/
+
+- **Focus Mode:**  
+  *Life in Motion* — Scott Buckley  
+  https://www.scottbuckley.com.au/library/life-in-motion/
+
+Music © Scott Buckley  
+Licensed under CC BY 4.0  
+https://creativecommons.org/licenses/by/4.0/
+
+---
+
 ## License
 
 MIT License
