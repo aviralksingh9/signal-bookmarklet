@@ -1,6 +1,6 @@
 ![Signal Demo](assets/signalDemo.gif)
 
-# 🧠 Signal — Web Intelligence Layer
+# 🧠 Signal - Web Intelligence Layer
 
 A lightweight bookmarklet that overlays any webpage with structural intelligence — instantly.
 
@@ -82,7 +82,8 @@ All without leaving the page.
 ## Installation
 
 1. Open `index.html` in your browser.
-2. Show bookmarks bar using: Ctrl + Shift + B
+2. Show bookmarks bar using: `Ctrl + Shift + B`
+
 
 3. Drag the **Signal** button to your bookmarks bar.
 
