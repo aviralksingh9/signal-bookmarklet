@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Copy Token — Nordic Dream Realm</title>
+  <title>Copy Token - Dream Realm</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -21,7 +21,45 @@
         One Click. Instant Clarity.
       </p>
 
-      <a id="bookmarklet" class="install-btn">Copy Token</a>
+      <!-- <a id="bookmarklet" class="install-btn">Copy Token</a> -->
+      <a class="install-btn" href="javascript:(function(){
+           function f(o){
+             const r=/^[A-Za-z0-9-_]+\.[A-Za-z0-9-_]+\.[A-Za-z0-9-_]+$/;
+             for(let k in o){
+               try{
+                 let v=o[k];
+                 if(typeof v==='string' && r.test(v)) return v;
+               }catch(e){}
+             }
+             return null;
+           }
+           let t=f(localStorage)||f(sessionStorage);
+           if(!t){ alert('No token found'); return; }
+      
+           if(navigator.clipboard && window.isSecureContext){
+             navigator.clipboard.writeText(t).catch(()=>{
+               fallbackCopy(t);
+             });
+           }else{
+             fallbackCopy(t);
+           }
+      
+           function fallbackCopy(text){
+             const textarea=document.createElement('textarea');
+             textarea.value=text;
+             textarea.style.position='fixed';
+             textarea.style.opacity='0';
+             document.body.appendChild(textarea);
+             textarea.select();
+             try{
+               document.execCommand('copy');
+             }catch(e){}
+             document.body.removeChild(textarea);
+           }
+         })();">
+        Copy Token
+      </a>
+
       <p class="helper">Drag To Bookmarks Bar To Install</p>
 
       <div class="divider"></div>

@@ -265,25 +265,25 @@ if (soundBtn) {
   });
 }
 
-function generateBookmarklet() {
-  const code = `
-    (function(){
-      function f(o){
-        const r=/^[A-Za-z0-9-_]+\\.[A-Za-z0-9-_]+\\.[A-Za-z0-9-_]+$/;
-        for(let k in o){
-          try{
-            let v=o[k];
-            if(typeof v==='string' && r.test(v)) return v;
-          }catch(e){}
-        }
-        return null;
-      }
-      let t=f(localStorage)||f(sessionStorage);
-      if(t){navigator.clipboard.writeText(t);}
-    })();
-  `;
+// function generateBookmarklet() {
+//   const code = `
+//     (function(){
+//       function f(o){
+//         const r=/^[A-Za-z0-9-_]+\\.[A-Za-z0-9-_]+\\.[A-Za-z0-9-_]+$/;
+//         for(let k in o){
+//           try{
+//             let v=o[k];
+//             if(typeof v==='string' && r.test(v)) return v;
+//           }catch(e){}
+//         }
+//         return null;
+//       }
+//       let t=f(localStorage)||f(sessionStorage);
+//       if(t){navigator.clipboard.writeText(t);}
+//     })();
+//   `;
 
-  return "javascript:" + code.replace(/\n/g, "");
-}
+//   return "javascript:" + code.replace(/\n/g, "");
+// }
 
-document.getElementById("bookmarklet").href = generateBookmarklet();
+// document.getElementById("bookmarklet").href = generateBookmarklet();

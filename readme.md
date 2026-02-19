@@ -172,8 +172,8 @@ Zen Mode and Focus Mode include music by **Scott Buckley**, used under the Creat
   https://www.scottbuckley.com.au/library/meanwhile/
 
 - **Focus Mode:**  
-  *Life in Motion* — Scott Buckley  
-  https://www.scottbuckley.com.au/library/life-in-motion/
+  *Reawakening* — Scott Buckley  
+  https://www.scottbuckley.com.au/library/reawakening/
 
 Music © Scott Buckley  
 Licensed under CC BY 4.0  
