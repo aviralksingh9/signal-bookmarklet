@@ -148,3 +148,104 @@ body.zen #soundBtn,
 body.focus #soundBtn {
   display: inline-block;
 }
+
+/* =========================
+   SIGNAL PREMIUM COMPACT
+========================= */
+
+.landing-content {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 30px;
+  letter-spacing: 0.6px;
+  margin-bottom: 12px;
+}
+
+.tagline {
+  font-size: 14px;
+  opacity: 0.75;
+  margin-bottom: 24px;
+}
+
+.install-btn {
+  padding: 14px 38px;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  border-radius: 32px;
+  box-shadow: 0 8px 24px rgba(99,102,241,0.25);
+}
+
+.install-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 36px rgba(99,102,241,0.35);
+}
+
+.helper {
+  margin-top: 14px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.divider {
+  height: 1px;
+  width: 55%;
+  margin: 26px auto;
+  background: linear-gradient(to right, transparent, rgba(0,0,0,0.12), transparent);
+}
+
+.instructions {
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.6;
+  opacity: 0.85;
+  max-width: 380px;
+  margin: 0 auto;
+  padding-left: 58px;   
+}
+
+.instructions div {
+  margin-bottom: 8px;
+  padding-left: 10px;   
+  border-left: 2px solid rgba(99,102,241,0.25);
+}
+
+.kbd {
+  padding: 3px 6px;
+  font-size: 11px;
+  border-radius: 6px;
+  background: rgba(0,0,0,0.08);
+  font-weight: 500;
+}
+
+.card {
+  padding: 45px;
+  border: 1px solid rgba(255,255,255,0.35);
+}
+
+/* ===== Refined Drag Indicator ===== */
+
+.drag-hint {
+  margin-top: 14px;
+  font-size: 12px;
+  opacity: 0.6;
+  letter-spacing: 0.3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.drag-arrow {
+  font-size: 14px;
+  opacity: 0.5;
+  animation: softSpin 6s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes softSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
