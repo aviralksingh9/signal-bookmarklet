@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Install Copy Token</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(18px);
+    border-radius: 20px;
+    padding: 55px;
+    width: 520px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0 0 15px 0;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  p.subtitle {
+    opacity: 0.75;
+    margin-bottom: 35px;
+    font-size: 15px;
+  }
+
+  .install-btn {
+    display: inline-block;
+    padding: 16px 34px;
+    font-size: 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4);
+    position: relative;
+  }
+
+  .install-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 35px rgba(139, 92, 246, 0.6);
+  }
+
+  .install-btn:active {
+    transform: scale(0.97);
+  }
+
+  .helper-text {
+    margin-top: 14px;
+    font-size: 14px;
+    opacity: 0.7;
+  }
+
+  .drag-hint {
+    margin-top: 18px;
+    font-size: 13px;
+    opacity: 0.6;
+    animation: float 2.5s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-4px); }
+  }
+
+  .instructions {
+    margin-top: 35px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.7;
+    opacity: 0.85;
+  }
+
+  .step {
+    margin-bottom: 10px;
+  }
+
+  .shortcut {
+    background: rgba(255,255,255,0.1);
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 13px;
+  }
+
+  footer {
+    margin-top: 30px;
+    font-size: 12px;
+    opacity: 0.5;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+  <h1>Install “Copy Token”</h1>
+  <p class="subtitle">
+    One-click token extraction for any logged-in environment.
+  </p>
+
+  <!-- IMPORTANT: Button text must match desired bookmark name -->
+  <a class="install-btn"
+     href="javascript:(function(){function f(o){const r=/^[A-Za-z0-9-_]+\.[A-Za-z0-9-_]+\.[A-Za-z0-9-_]+$/;for(let k in o){try{let v=o[k];if(typeof v==='string'&&r.test(v))return v;let p=JSON.parse(v);if(p&&typeof p==='object'){for(let x in p){if(r.test(p[x]))return p[x]}}}catch(e){}}return null}let t=f(localStorage)||f(sessionStorage);if(t){navigator.clipboard.writeText(t);alert('Token copied ✓')}else{alert('No token found')}})();">
+     Copy Token
+  </a>
+
+  <div class="helper-text">
+    Drag this button to your bookmarks bar to install
+  </div>
+
+  <div class="drag-hint">
+    ⬆ Make sure bookmarks bar is visible
+  </div>
+
+  <div class="instructions">
+    <div class="step">1. Show bookmarks bar: <span class="shortcut">Ctrl + Shift + B</span></div>
+    <div class="step">2. Drag the “Copy Token” button above into the bookmarks bar</div>
+    <div class="step">3. Login to any environment</div>
+    <div class="step">4. Click “Copy Token” → token copied instantly</div>
+  </div>
+
+  <footer>
+    Works with tokens stored in localStorage or sessionStorage.
+  </footer>
+
+</div>
+
+</body>
+</html>
